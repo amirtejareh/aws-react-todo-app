@@ -7,7 +7,12 @@ type Props = {
   children?: React.ReactNode;
 };
 
-export default function Hero({ src, alt, minHeight = "60vh", children }: Props) {
+export default function Hero({
+  src,
+  alt,
+  minHeight = "60vh",
+  children,
+}: Props) {
   const [loaded, setLoaded] = useState(false);
 
   return (
